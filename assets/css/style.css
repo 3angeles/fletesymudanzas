@@ -124,7 +124,8 @@ p {
     .main-btn {
       padding: 0 30px;
       height: 45px;
-      line-height: 45px; } }
+      line-height: 45px; } 
+    }
   .main-btn:hover {
     background-color: rgba(125, 173, 235, 0.822);
     color: #fff; }
@@ -549,7 +550,13 @@ p {
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
-    padding: 5px 12px; } }
+    padding: 5px 12px; } 
+  
+    .positionImgInicial {
+      width: 95%; position: relative; right: -5px !important;
+    }
+  
+  }
 
 .navbar-nav .nav-item {
   margin-left: 45px;
@@ -1141,3 +1148,52 @@ p {
           font-size: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
+.circular--square { border-radius: 50%; }
+.circular--square { border-top-left-radius: 50% 50%; border-top-right-radius: 50% 50%; border-bottom-right-radius: 50% 50%; border-bottom-left-radius: 50% 50%;
+border: 1px solid black; }
+
+.carousel {
+  position: relative;
+  width: 90%;
+  /* max-width: 600px; */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: red;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 30%;
+}
+
+.carousel-buttons button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.positionImgInicial {
+  width: 95%; position: relative; right: -70px;
+}
+
